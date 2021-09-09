@@ -1,0 +1,15 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.top-header{
+   background-color:  rgba(38, 70, 83, 1);
+}
+.grayscale{
+    filter: grayscale(100%);
+}
+.list-style{
+    list-style: none;
+}
+li{
+    margin-right: 20px;
+}

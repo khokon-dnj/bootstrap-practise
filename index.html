@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!------------ google fonts ---------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!------------- bootstrap css ---------->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!---------------- custom css --------------->
+    <link rel="stylesheet" href="style.css">
+
+    <!--------- font awesome -------------->
+    <script src="https://kit.fontawesome.com/e562f55d98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="top-header">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler float-" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link active" href="#">Shops</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">New Arrivals</a>
+                            </li>
+                            <li class="nav-item ms-3 me-5">
+                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+            
+                        </ul>
+            
+                        <button class="ms-5 btn btn-outline-light text-dark bg-warning" type="submit">Login</button>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+
+        <section class="container mt-3">
+            <div class="row">
+                <div class="col-md-7 d-flex justify-content-center align-items-center">
+                    <div>
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut totam nam deleniti quisquam a?</small>
+                        <h1 class="text-light">HONDA CBR 300R</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi enim saepe ullam voluptas atque molestias
+                            voluptates fuga aliquid sit laborum, dicta eligendi magnam. Omnis modi voluptates fugit eos enim.</p>
+                        
+                        <button class="btn-success border rounded px-3 py-1">Purchase</button>    
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                     <img class="img-fluid" src="images/header-bike.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+    </header>
+
+
+    <main class="container mt-5">
+
+       <!--------------- featured bike area --------------
+        -------------------------------------------------->
+        <section class="mb-5">
+            <h1 class="text-center">Featured Bikes 2021</h1>
+            <p class="text-center fs-6"><u>Best Bike Collection</u></p>
+            <div class="row mt-5">
+               <div class="col-md-4 gx-5">
+                  <img class="img-fluid grayscale" src="images/feature-bike.jpg" alt="">
+               </div>
+               <div class="col-md-4 gx-5">
+                  <img class="img-fluid" src="images/feature-bike.jpg" alt="">
+               </div>
+               <div class="col-md-4 gx-5">
+                  <img class="img-fluid grayscale" src="images/feature-bike.jpg" alt="">
+               </div>
+               
+
+            </div>
+            
+        </section>
+
+    <!----------------------------- Latest News Area 
+        ---------------------------------------------------------------------->
+        <section class="mt-5">
+            <h1 class="text-center">Latest News</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="p-3" src="images/bike-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quos dolore quas! Harum, vel mollitia! Ipsa, iure consequuntur.</p>
+
+                            <button class="btn bg-warning text-light">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="p-3" src="images/bike-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Motorcycles & Scooters</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae sapiente tempore, ducimus dicta sit voluptatem ullam inventore placeat maxime.</p>
+                            <button class="btn btn-outline-warning">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="p-3" src="images/bike-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Royal Enfeild 350cc</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aspernatur cumque ad officiis ex illum maiores corporis nihil nostrum fuga.</p>
+                                <button class="btn btn-outline-warning">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------ Clients Review Area 
+        -------------------------------------------------------------->
+
+        <section class="container mt-5">
+            <h1 class="fw-bold text-center">Happy <span class="text-danger">Clients Says</span></h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 px-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="p-5" src="images/user-1.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusantium illo esse libero non nam culpa doloribus distinctio voluptate, nemo aut expedita impedit, numquam fugit?</p>
+
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="p-5" src="images/user-2.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Motorcycles & Scooters</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsa molestiae ullam commodi magni reprehenderit ipsam, tempora quasi, minus quod porro ad ducimus, repudiandae mollitia?</p>
+
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="p-5" src="images/CC_20210831_151809_copy_596x596.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Royal Enfeild 350cc</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, minus eius accusantium ex corporis soluta nihil, dignissimos animi debitis numquam est minima officiis ratione! Veritatis.</p>
+
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!----------------------------------- FAQ AREA-------
+        ------------------------------------------------------------------ -->
+
+        <section class="container mt-5">
+            <h1 class="fw-bold text-center">Frequently Asked <span class="text-danger">Questions</span></h1>
+
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-md-5 px-5">
+                        <img class="img-fluid" src="images/faq.png" alt="">
+                
+                    </div>
+                    <div class="col-md-7 px-4">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What are the most important thing should I know about riding a bike?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi soluta quia, non vitae iusto cumque. Impedit commodi aliquid nostrum ea voluptatibus, porro aperiam totam, blanditiis culpa tempore ipsum soluta molestiae illum, nobis perferendis. Aut quibusdam excepturi odio consequatur velit reiciendis!</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                                        collapse
+                                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                                        overall
+                                        appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                                        with
+                                        custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                                        can go
+                                        within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                        collapse
+                                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                                        overall
+                                        appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                                        with
+                                        custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                                        can go
+                                        within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Accordion Item #4
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                        collapse
+                                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                                        overall
+                                        appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                                        with
+                                        custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                                        can go
+                                        within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!----------------------------- footer area ---------------------------->
+    <footer class="bg-dark mt-5 mb-2">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-8 text-light d-flex align-items-center">
+                   <div class="">
+                        <a class="me-3 text-decoration-none text-light" href="">Download Now</a> <span>Licence</span> <br>
+                        <ul class="list-group list-group-horizontal list-style">
+                            <li>About</li>
+                            <li>Pricing</li>
+                            <li>Featured</li>
+                            <li>Carier</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                        
+                        <small>All Rights Reserved to @bike2021</small>
+                   </div>
+                
+                
+                
+                </div>
+                
+                <div class="col-md-4">
+                    <img class="img-fluid bg-dark"
+                        src="images/download-app-store-get-google-play-button-icons-vector-illustration-october-201439380.jpg" alt="">
+                </div>
+
+
+            </div>
+        </section>
+
+    </footer>
+
+    
+    
+<!-- --------------- bootstrap js ----------- -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
