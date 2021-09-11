@@ -19,34 +19,62 @@
     <script src="https://kit.fontawesome.com/e562f55d98.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="top-header">
+    <header class="top-header pb-5">
         <section class="container">
-            <nav class="navbar navbar-expand-lg navbar-light pt-4">
+            <!-- <nav class="navbar navbar-expand-lg pt-4">
                 <div class="container-fluid">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <a class="navbar-brand" href="#">Navbar</a>
                     <button class="navbar-toggler float-" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active font-color" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link active" href="#">Shops</a>
+                                <a class="nav-link active font-color" href="#">Shops</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">New Arrivals</a>
+                                <a class="nav-link active font-color" href="#" tabindex="-1" aria-disabled="true">New Arrivals</a>
                             </li>
                             <li class="nav-item ms-3 me-5">
-                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                                <a class="nav-link active font-color" href="#" tabindex="-1" aria-disabled="true">Contact</a>
                             </li>
             
                         </ul>
             
-                        <button class="ms-5 btn btn-outline-light text-dark bg-warning" type="submit">Login</button>
+                        <button class="ms-5 btn btn-outline-primary text-light btn-bg border-0 px-4" type="submit">Login</button>
+                    </div>
+                </div>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Latest Arrival</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Shops</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -57,12 +85,34 @@
             <div class="row">
                 <div class="col-md-7 d-flex justify-content-center align-items-center">
                     <div>
-                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut totam nam deleniti quisquam a?</small>
-                        <h1 class="text-light">HONDA CBR 300R</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi enim saepe ullam voluptas atque molestias
+                        <small class="font-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</small>
+                        <h1 class="text-light fw-bold">HONDA CBR 300R</h1>
+                        <p class="mt-2 font-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi enim saepe ullam voluptas atque molestias
                             voluptates fuga aliquid sit laborum, dicta eligendi magnam. Omnis modi voluptates fugit eos enim.</p>
                         
-                        <button class="btn-success border rounded px-3 py-1">Purchase</button>    
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn border-0 px-5 btn-outline-info text-light btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Purchase
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-warning" id="exampleModalLabel">Payable Amount 2000$</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure to conntinue up?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+                                        <button type="button" class="btn btn-danger">Not Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center align-items-center">
@@ -83,13 +133,13 @@
             <h1 class="text-center">Featured Bikes 2021</h1>
             <p class="text-center fs-6"><u>Best Bike Collection</u></p>
             <div class="row mt-5">
-               <div class="col-md-4 gx-5">
+               <div class="col-md-4 g-5">
                   <img class="img-fluid grayscale" src="images/feature-bike.jpg" alt="">
                </div>
-               <div class="col-md-4 gx-5">
+               <div class="col-md-4 g-5">
                   <img class="img-fluid" src="images/feature-bike.jpg" alt="">
                </div>
-               <div class="col-md-4 gx-5">
+               <div class="col-md-4 g-5">
                   <img class="img-fluid grayscale" src="images/feature-bike.jpg" alt="">
                </div>
                
@@ -141,8 +191,8 @@
         -------------------------------------------------------------->
 
         <section class="container mt-5">
-            <h1 class="fw-bold text-center">Happy <span class="text-danger">Clients Says</span></h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 px-4">
+            <h1 class="fw-bold text-center">Happy <span class="orange-color">Clients Says</span></h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 px-3">
                 <div class="col">
                     <div class="card h-100">
                         <img class="p-5" src="images/user-1.png" class="card-img-top" alt="...">
@@ -155,6 +205,8 @@
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star-half-alt text-warning"></i>
+                                <p class="mt-2 name">Josh Philips</p>
+                                <p>Banker</p>
             
                         </div>
                     </div>
@@ -171,6 +223,8 @@
                             <i class="fas fa-star text-warning"></i>
                             <i class="fas fa-star text-warning"></i>
                             <i class="far fa-star text-warning"></i>
+                            <p class="mt-2 name">Ayra Stark</p>
+                            <p>Teacher</p>
                         </div>
                     </div>
                 </div>
@@ -186,6 +240,8 @@
                             <i class="fas fa-star text-warning"></i>
                             <i class="fas fa-star text-warning"></i>
                             <i class="fas fa-star-half-alt text-warning"></i>
+                            <p class="mt-2 name">Jacky Spider</p>
+                            <p>Artist</p>
                         </div>
                     </div>
                 </div>
@@ -299,35 +355,34 @@
     </main>
 
     <!----------------------------- footer area ---------------------------->
-    <footer class="bg-dark mt-5 mb-2">
-        <section class="container">
-            <div class="row">
-                <div class="col-md-8 text-light d-flex align-items-center">
-                   <div class="">
-                        <a class="me-3 text-decoration-none text-light" href="">Download Now</a> <span>Licence</span> <br>
-                        <ul class="list-group list-group-horizontal list-style">
-                            <li>About</li>
-                            <li>Pricing</li>
-                            <li>Featured</li>
-                            <li>Carier</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                        
-                        <small>All Rights Reserved to @bike2021</small>
-                   </div>
-                
-                
-                
-                </div>
-                
-                <div class="col-md-4">
-                    <img class="img-fluid bg-dark"
-                        src="images/download-app-store-get-google-play-button-icons-vector-illustration-october-201439380.jpg" alt="">
-                </div>
+    <footer class="bg-dark mt-5">
+      
 
-
+     <section class="container d-flex">
+        <section class="col-md-10">
+            <div class="">
+                <a class="me-3 text-decoration-none" href="">Download Now</a>
+                <a class="text-decoration-none" href="">Licence</a>
+            </div>
+        
+            <div class="">
+                <a class="me-3 text-decoration-none" href="">Download Now</a>
+                <a class="me-3 text-decoration-none" href="">Licence</a>
+                <a class="me-3 text-decoration-none" href="">Licence</a>
+                <a class="me-3 text-decoration-none" href="">Licence</a>
+                <a class="me-3 text-decoration-none" href="">Licence</a>
+            </div>
+            <small class="text-light">All Rights Reserved to @bike 2021.</small>
+        </section>
+        
+        <section class="col-md-2">
+            <div>
+                <h6>Get the App</h6>
+                <img src="images/artwork.png" alt=""> <br>
+                <img class="mt-2" src="images/Group.png" alt="">
             </div>
         </section>
+     </section>
 
     </footer>
 

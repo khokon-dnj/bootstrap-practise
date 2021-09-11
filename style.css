@@ -13,3 +13,18 @@
 li{
     margin-right: 20px;
 }
+.orange-color{
+    color: rgba(231, 111, 81, 1);
+}
+.btn-bg{
+    background-color:rgba(231, 111, 81, 1); 
+}
+.name{
+    color: rgba(35, 166, 240, 1);
+}
+.btn-color{
+    background-color: rgba(231, 111, 81, 1) ;
+}
+.font-color{
+    color:rgba(255, 255, 255, 1);
+}
